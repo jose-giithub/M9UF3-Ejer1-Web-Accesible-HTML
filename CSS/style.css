@@ -5,6 +5,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /* ESTILOS DEL NEV */
 nav {
     display: flex; /* Asegura que todos los elementos directos de nav estén en línea */
@@ -155,7 +156,9 @@ nav {
         nav form {
         margin-left: 10; /* Centra el formulario */
         }
-        
+        #seccion1, #seccion2 {
+          flex-direction: column; /* Cambia la dirección de los flex items a columna */
+        }
 
 
     }
