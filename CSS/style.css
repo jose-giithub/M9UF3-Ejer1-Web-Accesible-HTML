@@ -1,5 +1,5 @@
 body{
-    background-color: gainsboro;
+    background-color: white;
 }
 a{
     text-decoration: none;
@@ -10,7 +10,7 @@ nav {
     display: flex; /* Asegura que todos los elementos directos de nav estén en línea */
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
     align-items: center; /* Alinea verticalmente los elementos */
-    background-color: black;
+    background-color: blue;
     padding: 0 10px; /* Añade un poco de espacio alrededor de todo el contenido de nav */
   }
   
@@ -46,7 +46,7 @@ nav {
   }
   
   button {
-    background-color: blue;
+    background-color: rgb(47, 117, 192);
     color: white;
     border: none; /* Elimina el borde predeterminado */
     padding: 10px; /* Añade un poco de espaciado interno */
@@ -56,7 +56,6 @@ nav {
     background-color: chartreuse;
   }
   
-
   label {
     display: none; /* Oculta el label ya que tiene un placeholder en el input */
   }
@@ -67,41 +66,86 @@ nav {
     margin-top: 10px;
     margin-left: 15px ;
     margin-right: 15px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: blue;
     text-align: center;
     padding: 30px;
   }
-  /* ESTILO DE LOS ARTÍCULOS */
-  article{
-    margin-left: 15px ;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border: solid 3px black;
-    padding: 10px;
-    background-color: wheat;
+  h2{
+    font-size: 24px; /* Tamaño en píxeles */
+  }
+/* ESTILOS CUERPO PRINCIPAL */
+   main {
+    margin-top: 15px;
+    width: 90%;
+    max-width: auto; 
+    margin: auto; 
+  } 
+  /* ESTILOS SECCION 1 */
+  #seccion1 {
+  
+    display: flex; /* Establece un contenedor flexible */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    justify-content: space-between; /* Separa los elementos justo a los extremos */
+  }
+  #seccion2 {
+  
+    display: flex; /* Establece un contenedor flexible */
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    justify-content: space-between; /* Separa los elementos justo a los extremos */
+  
+  }
+  #titulosecion1{
+    text-align: left;
+  }
+  #titulosecion2{
+    text-align: left;
   }
 
-  /* ESTILOS DE LAS IMáGENES */
-#contenedorImg {
-  display: flex;
-  justify-content: space-around; /* Espacia las imágenes uniformemente en la fila */
-  flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea en pantallas pequeñas */
-}
+  #titulosecion1, #articulo1 {
+  
+    flex-basis: 50%; /* Asigna un ancho base para el título y el artículo */
+  }
+  #titulosecion2, #articulo2 {
+    flex-basis: 50%; /* Asigna un ancho base para el título y el artículo */
+  }
+  
+  #articulo1 {
+  
+    display: flex; /* Establece un contenedor flexible para el texto y la figura */
+    flex-direction: column; /* Alinea el texto y la figura verticalmente */
+  }
+  #articulo2 {
+ 
+    display: flex; /* Establece un contenedor flexible para el texto y la figura */
+    flex-direction: column; /* Alinea el texto y la figura verticalmente */
+  }
+  figure img {
+    margin-top: 25px;
+    padding: 30px;
+    width: 500px; /* Establece el ancho de la imagen a 200 píxeles */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+  }
+  #img1 {
+    align-self: flex-end; /* Alinea la imagen al final del contenedor */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+  }
+  #img2 {
 
-figure {
-  text-align: center; /* Centra los elementos dentro del contenedor figure */
-}
+    align-self: flex-start; /* Alinea la imagen al final del contenedor */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+  }
+  
+  figure {
+    margin: 0; /* Remueve el margen predeterminado */
+  }
+  
+  figcaption {
+    text-align: center; /* Centra el texto de la leyenda */
+    margin-bottom: 25px;
+  }
 
-figure img {
-    margin-top: 15px;
-  max-width: 80%; /* Hace que la imagen sea responsive y no exceda el ancho de su contenedor */
-  height: auto; /* Mantiene la proporción de la imagen al escalar */
-}
-
-figcaption {
-  margin-top: 10px; /* Espacio entre la imagen y los enlaces */
-}
   /* RESPONSIVIDAD  */
     @media (max-width: 600px) {
         /* *********NAV */
