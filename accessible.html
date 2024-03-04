@@ -14,76 +14,43 @@
   </head>
 
   <body>
-    <a href="#">Barra de selección</a>
-    <a href="#">Features</a>
-    <a href="#">Pricing</a>
-    <a href="#">About</a>
-    <a href="#">Contact us</a>
-    <form>
-      <label for="buscador"></label>
-      <input type="text" placeholder="Search" />
-      <button type="submit">Presione para buscar</button>
-    </form>
-    <table>
-      <tr>
-        <h1>Article title</h1>
-      </tr>
-      <tr>
-        <td>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h2>Article subtitle #1</h2>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="img/mujerMeditado.jpg"
-            alt="3 mujeres meditando sentadas en el suelo "
-          />
-          <a href="https://pixabay.com/es"
-            >Enlace de la imagen de las mujeres</a
-          >
-          <a href=" https://pixabay.com/es/service/license-summary/"
-            >Enlace licencia imagen</a
-          >
+    <nav>
+      <ul >
+        <li><a href="#">Barra de selección</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
 
-          <img src="img/pajaro.jpg" alt="Pájaro mirando el agua" />
-          <a href="https://pixabay.com/es"
-            >Enlace de la imagen de las mujeres</a
-          >
-          <a href=" https://pixabay.com/es/service/license-summary/"
-            >Enlace licencia imagen</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h3>Article subtitle #2</h3>
-        </td>
-      </tr>
-      <tr>
-        <td>
+      <form action="#" method="post">
+        <label for="buscador">Buscar</label>
+        <input id="buscador" type="text" placeholder="Buscar" />
+        <button type="submit">Presione para buscar</button>
+      </form>
+    </nav>
+    <!-- Titulo principal y encabezado -->
+    <header id="tituloPrincipal">
+      <h1>Article title</h1>
+    </header>
+    <!-- texto encabezado -->
+    <article id="articuloPrincipal">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </article>
+    <!-- contenido principal -->
+    <main>
+      <!-- seccion 1 -->
+      <section id="seccion1">
+        <header id="titulosecion">
+          <h2>Article subtitle #1</h2>
+        </header>
+        <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -91,8 +58,38 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </td>
-      </tr>
-    </table>
+          <div id="contenedorImg">
+            <figure>
+              <img src="img/mujerMeditado.jpg" alt="3 mujeres meditando sentadas en el suelo " />
+              <figcaption>
+                <a href="https://pixabay.com/es">Enlace de la imagen de las mujeres</a>
+                <a href="https://pixabay.com/es/service/license-summary/">Enlace licencia imagen</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/pajaro.jpg" alt="Pájaro mirando el agua" />
+              <figcaption>
+                <a href="https://pixabay.com/es">Enlace de la imagen del pájaro</a>
+                <a href="https://pixabay.com/es/service/license-summary/">Enlace licencia imagen</a>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+      <!-- contenido secundario de una web -->
+      <aside >
+        <header id="titulosecion">
+          <h2>Article subtitle #2</h2></header>
+        <article>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </article>
+      </aside>
+    </main>
   </body>
 </html>
