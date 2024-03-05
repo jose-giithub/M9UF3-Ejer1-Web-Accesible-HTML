@@ -8,7 +8,7 @@ a{
 }
 /*****ESTILOS ESPECÍFICOS PARA REMARCAR EL AREA-ICRREMT*/
 a[aria-current="page"] {
-  color: rgb(229, 164, 12);
+  color: #0D0D0D;
   font-size: 20px;
   font-weight: bold;
   font-family: "cursive", serif; 
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  color: #F5E663;
+  color: #170A38;
   font-style: italic;
   font-weight: bold;
 }

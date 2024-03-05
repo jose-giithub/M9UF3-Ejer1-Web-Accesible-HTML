@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav role="navigation">
+    <nav >
       <ul>
         <li><a href="accessible.html" aria-current="page">Inicio</a></li>
         <li><a href="pagina2.html">Página 2</a></li>
@@ -27,8 +27,8 @@
       <form action="#" method="post" role="search">
         <label for="buscador">Buscar</label>
           <!--****** usar  descripción si le quito el texto al boton -> aria-label= -->
-            <input id="buscador" type="text" aria-label="boton de búsqueda" />
-            <button type="submit" >
+            <input id="buscador" type="text"  />
+            <button type="submit" aria-label="boton de búsqueda">
               <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </button>
       </form>
@@ -39,7 +39,7 @@
       <h1>Article title</h1>
     </header>
     <!-- texto encabezado -->
-    <article id="articuloPrincipal">
+    <article id="articuloPrincipal" role="article">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -60,7 +60,7 @@
             <h2>Article subtitle #1</h2>
           </header>
 
-          <article id="articulo1">
+          <article id="articulo1"role="article">
             <!-- texto dejabo del titulo a la izquierda -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -100,8 +100,8 @@
         <header id="titulosecion2">
           <h2>Article subtitle #2</h2>
         </header>
-
-        <article id="articulo2">
+<!-- poner role a los articulos -->
+        <article id="articulo2" role="article">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
