@@ -1,5 +1,6 @@
+/* modifico el color de fondo */
 body{
-  background-color: white;
+  background-color: #F5E663;
 }
 a{
   text-decoration: none;
@@ -7,8 +8,11 @@ a{
 }
 /*****ESTILOS ESPECÍFICOS PARA REMARCAR EL AREA-ICRREMT*/
 a[aria-current="page"] {
-font-weight: bold;/* Peso de la fuente */
-color: black;
+  color: rgb(229, 164, 12);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "cursive", serif; 
+  font-style: italic; 
 }
 
 /* ESTILOS DEL NEV */
@@ -16,12 +20,14 @@ nav {
   display: flex; /* Asegura que todos los elementos directos de nav estén en línea */
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
-  background-color: blue;
+  background-color: #47A8BD;
   padding: 0 10px; /* Añade un poco de espacio alrededor de todo el contenido de nav */
 }
 
 nav a {
-  color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 ul{
@@ -40,7 +46,9 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  color: rgb(29, 212, 57);
+  color: #F5E663;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* Estilos para el formulario de búsqueda */
@@ -55,7 +63,7 @@ nav input{
 }
 
 button {
-  background-color: rgb(47, 117, 192);
+  background-color:#F5E663;
   color: white;
   border: none; /* Elimina el borde predeterminado */
   padding: 10px; /* Añade un poco de espaciado interno */
@@ -63,7 +71,7 @@ button {
 }
 
 button:hover {
-  background-color: chartreuse;
+  background-color: #1E3888;
 }
 
 label {
@@ -74,15 +82,17 @@ label {
 /* ESTILOS DE LOS TÍTULOS */
 header{
   margin-top: 10px;
-  margin-left: 15px ;
-  margin-right: 15px;
-  background-color: white;
-  color: blue;
+  margin-left: 0 ;
+  margin-right: 0;
+  background-color: #47A8BD;
+  color: black;
   text-align: center;
   padding: 30px;
+  font-weight: bold;
 }
 h2{
   font-size: 24px; /* Tamaño en píxeles */
+  font-weight: bold;
 }
 /* ESTILOS CUERPO PRINCIPAL */
  main {
@@ -91,6 +101,20 @@ h2{
   max-width: auto; 
   margin: auto; 
 } 
+main p {
+  margin-top: 15px;
+  font-size: 18px; /* Tamaño en píxeles */
+  line-height: 1.5; /* Espaciado entre líneas */
+  text-align: justify; /* Alinea el texto justificado */
+  margin-bottom: 25px; /* Añade un poco de espacio debajo de cada párrafo */
+
+}
+main strong {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "cursive", serif; 
+  font-style: italic; 
+}
 /* ESTILOS SECCION 1 */
 #seccion1 {
 
@@ -108,8 +132,10 @@ h2{
 }
 #titulosecion1{
   text-align: left;
+  background-color: #47A8BD;
 }
 #titulosecion2{
+  background-color: #47A8BD;
   text-align: left;
 }
 
