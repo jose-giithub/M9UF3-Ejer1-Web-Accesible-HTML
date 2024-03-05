@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Accesible HTML</title>
     <link
@@ -14,57 +15,62 @@
   </head>
 
   <body>
-    <nav>
+    <nav role="navigation">
       <ul>
-        <li><a href="#">Barra de selección</a></li>
-        <li><a href="#">Features</a></li>
+        <li><a href="accessible.html" aria-current="page">Inicio</a></li>
+        <li><a href="pagina2.html">Página 2</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact us</a></li>
       </ul>
-
-      <form action="#" method="post">
+<!-- donde descargar los iconos https://fontawesome.com/search?o=r&m=free -->
+      <form action="#" method="post" role="search">
         <label for="buscador">Buscar</label>
-        <input id="buscador" type="text" placeholder="Buscar" />
-        <button type="submit">Presione para buscar</button>
+          <!--****** usar  descripción si le quito el texto al boton -> aria-label= -->
+            <input id="buscador" type="text" aria-label="boton de búsqueda" />
+            <button type="submit" >
+              <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            </button>
       </form>
     </nav>
-    <main>
+    <main role="main">
     <!-- Titulo principal y encabezado -->
-    <header id="tituloPrincipal">
+    <header id="tituloPrincipal" role="banner">
       <h1>Article title</h1>
     </header>
     <!-- texto encabezado -->
     <article id="articuloPrincipal">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
+    </p>
+      
     </article>
     <!-- contenido principal -->
     
       <!-- seccion 1 -->
-      <section id="seccion1">
+      <section id="seccion1" role="region">
         <div id="divSeccion1">
-        <!-- titulo arriba en la iquierda -->
-        <header id="titulosecion1">
-          <h2>Article subtitle #1</h2>
-        </header>
+          <!-- titulo arriba en la iquierda -->
+          <header id="titulosecion1">
+            <h2>Article subtitle #1</h2>
+          </header>
 
-        <article id="articulo1">
-          <!-- texto dejabo del titulo a la izquierda -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <article id="articulo1">
+            <!-- texto dejabo del titulo a la izquierda -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
           <!-- esta perte a la derecha del texto ocupando lo mismo que el titulo y texto juntos de alto -->
           <figure id="img1">
@@ -73,18 +79,22 @@
               alt="3 mujeres meditando sentadas en el suelo "
             />
             <figcaption>
-              <a href="https://pixabay.com/es"
+              <ul>
+                <li> <a href="https://pixabay.com/es"
                 >Enlace de la imagen de las mujeres</a
-              >
-              <a href="https://pixabay.com/es/service/license-summary/"
+              ></li>
+              <li> <a href="https://pixabay.com/es/service/license-summary/"
                 >Enlace licencia imagen</a
-              >
+              ></li>
+              </ul>
+             
+             
             </figcaption>
           </figure>
         </article>
       </section>
 
-      <section id="seccion2">
+      <section id="seccion2" role="region">
         <!-- articulo 2 -->
         <div id="divSeccion2">
         <header id="titulosecion2">
@@ -106,16 +116,18 @@
           <figure id="img2">
             <img src="img/pajaro.jpg" alt="Pájaro mirando el agua" />
             <figcaption>
-              <a href="https://pixabay.com/es"
-                >Enlace de la imagen del pájaro</a
-              >
-              <a href="https://pixabay.com/es/service/license-summary/"
-                >Enlace licencia imagen</a
-              >
+              <ul>
+                <li><a href="https://pixabay.com/es">Enlace de la imagen del pájaro</a></li>
+              <li> <a href="https://pixabay.com/es/service/license-summary/">Enlace licencia imagen</a></li>
+              </ul>
+              
+             
             </figcaption>
           </figure>
         </article>
       </section>
     </main>
+    <aside role="complementary">Contenido no relacionado </aside>
+    <footer role="contentinfo">Pie de pagina</footer>
   </body>
 </html>
