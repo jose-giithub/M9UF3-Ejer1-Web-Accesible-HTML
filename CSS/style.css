@@ -165,12 +165,12 @@ main strong {
 
 
 figure img {
-  margin-top: 25px;
-  padding: 30px;
+  padding: 10px;
   width: 500px; /* Establece el ancho de la imagen a 200 píxeles */
   height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
 }
 #img1 {
+  
   align-self: flex-end; /* Alinea la imagen al final del contenedor */
   margin-left: auto; /* Empuja la imagen hacia la derecha */
 }
