@@ -25,9 +25,13 @@ nav {
 }
 
 nav a {
+
   color: black;
   font-size: 18px;
   font-weight: bold;
+}
+nav a:hover {
+  background-color:  #F5E663;
 }
 
 ul{
@@ -70,8 +74,9 @@ button {
   cursor: pointer; /* Cambia el cursor para indicar que es un botón */
 }
 
-button:hover {
-  background-color: #1E3888;
+nav button:hover {
+  background-color: #47A8BD;
+  border: solid 3px #F5E663;
 }
 
 label {
@@ -157,6 +162,8 @@ main strong {
   display: flex; /* Establece un contenedor flexible para el texto y la figura */
   flex-direction: column; /* Alinea el texto y la figura verticalmente */
 }
+
+
 figure img {
   margin-top: 25px;
   padding: 30px;
@@ -177,6 +184,9 @@ figure {
   margin: 0; /* Remueve el margen predeterminado */
 }
 
+figure a:hover {
+  background-color: #47A8BD;
+}
 figcaption {
   text-align: center; /* Centra el texto de la leyenda */
   margin-bottom: 25px;
